@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100wh;
+   }
+
+          /********primera parte******/
+
+      
+body {
+   background-color: yellow;/*   2 ojoooo  poner el fondoma  segunda parteamarillo*/
+   max-width: 100%;
+   }
+
+      #fondoprincipal {          /*PARTE DEL BANNER*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+      
+
+
+
+      nav {    /*ojooooo   encabezado*/
+                 width: 100%;         
+                 height: 100px;
+                 background-color: #7e7e7e;
+                 display: grid;
+                 grid-template-columns: 3fr 2fr;
+                 align-items: center;
+                 position: fixed;
+                 top: 0;
+               #logoi { 
+                     margin-left: 10px;  
+                     }
+               #logomovile {
+                    display: none;
+                    } 
+
+         .links  {
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               align-items: center;
+                      .idiomas {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        align-items: center;
+                        gap: 40px;
+                           img {
+                              margin-right: 40px;
+                            }
+                        } 
+
+               a {
+                  text-decoration: none;
+                  color: white;
+                 }
+
+               .grey {
+                  color: grey;
+                 }
+
+                   .registro { 
+                      display: grid;
+                      grid-template-columns: 1fr 1fr 1fr;
+
+                        a {
+                        justify-content: center;
+                          }
+ 
+                     }
+
+               #bar {
+                   height: 100%;
+                   width: 1px;
+                   background-color: rgb(96, 19, 19);
+                  } 
+            }
+
+                   /*parte de abajo inferior*/    /*Donde va la flecha*/
+
+      #contenedor{          
+   
+                   background-size: cover;
+                   background-position: center;
+                   height: 100vh;
+                   width: 100wh;
+                   display: grid;
+                   grid-template-columns: 1fr 1fr;
+
+
+                   /* parte inferior izquierda   borrre tengo respaldo en word*/
+                   #titulos {
+                       position: absolute;
+                       top: 450px;
+                       margin-left: 5vw;  /*hace que mueva hacia la derecha luxury*/
+                       color: #7e7e7e;
+                        }
+                    button{
+                       background-color: transparent;
+                       border-radius: 50px;
+                       padding: 16px;  /*cambia eltamaño boton*/
+                       color: #FFFFFF;
+                       border: 1px solid #FFFFFF;
+                       font-family: Arial;
+                       font-size: 24px;
+                        }
+               }
+
+      #buscador{
+                  justify-self: end;
+                  
+                  input{
+                    
+                       border-radius: 40px;
+                       border: solid 2px white;  /*tamaño de la linea del buscador*/
+                       background-color: transparent;
+                       padding: 16px  65px;  /*centro dentro del buscador superior derecho*/
+                       color: greenyellow;
+                       font-size: 24px;
+                       width: 400px;  /*es el tamaño del cuadrito del buscador*/
+                         /* puse adicional*/  
+                       
+                         position: absolute;
+                         top: 50%;
+                         right: 70px;
+                         transform: translateY(100%);
+
+                  &::placeholder {     /*ARREGLAR*/
+                       color: plum;
+                                }
+                             
+                      
+                
+              
+              #redes {      /*es para mantener todo el bloque*/
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: auto 41px 25px 25px 25px;       /*  */
+              width: 45px; /*para mover la raya mas las imagenes*/
+              justify-items: center; /*centro las imagenes*/
+              position: fixed;
+              top: 130px;
+
+                  img {
+                     display: block;   /* poner imagenes una sobre otra*/
+                     margin-top: 10px;
+                     }
+     
+                  p {
+                     background-color: royalblue;
+                     transform: rotate(90deg);/*escalar rotar*/
+                     display: inline-block;
+                    }
+                  #rayida {
+                     height: 40px;
+                     width: 1px;
+                     border-left: 1px solid;
+                     margin-top: 17px;
+                        }
+            }
+
+
+            .rectangualres {
+              display: grid;
+              grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+              position: absolute;
+              row-gap: 26px;
+              top: 80vh;
+              width: 100%;
+
+                .rectangul {
+                height: 5px;
+               width: 31.5px;
+                }
+           }
+          }
+
+  
+        }
+      }
+         
+               /********segunda parte**********/
+
+ 
+      .seccion {
+                 display: grid;
+                 grid-template-columns: repeat(2, 1fr);
+    
+                .galeria {
+                      display: grid;
+                      grid-template-columns: repeat(12, 1fr);
+                      gap: 10px;
+
+                      .primera {
+                           grid-column: span 2;
+                           width: 100%; /*1arreglo*/
+                            height: 100%; 
+                            object-fit: cover; /*2arreglo*/
+                           }
+                    .ultimas {
+                         grid-column: span 5;
+                         position: relative;
+                         width: 100%;
+                         height: 100%;
+                         object-fit: cover; /*2arreglo*/
+
+                            .textos {    /*imagen y los textos sobre puestos*/
+                                  position: absolute;
+                                  transform: translateY(-100%);
+                                  font-size: 30px;
+                                  padding: 20px;
+                                 }
+
+                             .textosuno {
+                                  color: white;
+                                 }
+
+                             .textosdos {  /*arreglar*/
+                                  color: black;
+                                  background-color: white;
+                                  width: 61%;
+                                    }
+                             }
+
+
+                             .imagenes {
+                                 width:100%;
+                                 height:100%;
+                                 object-fit: cover;
+                               }
+                     }
+          }
+
+         .contenido {
+                 display: grid;
+                 padding-right: 100px;
+
+                      .botones {
+                          display: grid;
+                          grid-template-columns: 1fr 2fr 1fr;
+                          align-items: end;
+
+                      .medio {
+                          background-color: transparent;
+                          border-radius: 48px;
+                          height: fit-content;
+                          font-size: 18px;
+                          padding: 12px;
+                         }
+
+                .direcciones {
+                          background-color: transparent;
+                          border: none;
+                          font-size: 20px;
+                         }
+                   .prev {
+                          color: gray;
+                      }
+
+                   .next {
+                          color: orange;
+                        }
+                      }
+
+                   .textos {
+                    font-size: 48px;
+                    text-align: end;
+                     h6 {
+                    color: orange;
+                    margin-bottom: 10px;
+                      }
+                     }
+                }
+
+           /*****TERCERA PARTE*****/
+
+      #galery {
+                 display: grid;
+                 grid-template-columns: 1fr 1fr 1fr 1fr;
+                 column-gap: 1%;
+               imagenes{
+                       width: 100%;
+                     }
+       
+               .contenedormaximo {
+                       max-height: 50%;
+                       overflow: hidden;
+                     }
+   
+                #contenedormaximo {
+                        background-image: url(imagenes/D1Mask group-5.jpg);
+                        height: 500px;
+                        background-color: aqua;
+                        background-repeat: repeat-x; /*centra la imagen*/
+                        background-position: top;
+                        background-size: cover;
+                        width: 45%;
+                        opacity: 1.5;
+                     }
+               }
+                  /********cuarta parte* *****/
+
+  footer{
+               background-color: black;
+               width: 230%;
+               height: 500px;
+               margin-top: 300px;
+
+         .negra {
+                      color: white;
+                      display: grid;
+                      width: 90%;
+                      margin: auto;
+                      gap: 20px;
+
+
+               .enlac {
+                     display: grid;
+                     grid-template-columns: repeat(4, 1fr);
+                     background-color: blue;
+                     font-size: 24px;
+   
+                   .primer{
+                      align-self: self-end;
+                       }
+                   .segund{
+                       align-self: center;
+                       }
+                   .tercer {
+                       align-self: self-end;
+                       #separado {
+                           margin-top: 20px;
+                           }
+                        } 
+
+                   .medio {
+                       justify-self: center;
+                       /* es para media quries desaparece*/
+                       }
+                   .ultim {
+                       text-align: right;
+                       align-self: self-end;
+                        }
+                         ul{
+                             li{
+                                list-style: none;
+                              }
+                         }
+                  }
+
+                   .copy {
+                     border-top: solid 2px white;
+                     p{
+                       text-align: center;
+                       margin: 20px 0;
+                      }
+                     }
+
+
+            }
+                    /* hace un cuadro y divide en dos */
+         .gris {      
+      
+                    width: 90%;
+                    background-color: #26282B;
+                    margin: auto; /*tiene el mismo margen*/
+                    transform: translateY(-50%);/*se mueve laimagen */
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;/*alinea de forma vertical */
+       
+
+            .segundap {
+                     display: grid;
+                     padding: 100px;
+                     gap: 10px;
+
+                 input{
+                     background-color: transparent;
+                     border: solid 1px grey;
+                     border-radius: 24px;
+                     padding: 10px 20px;
+                     font-size: 20px;
+                     }
+
+                 button {
+                    background-color: transparent;
+                    border: solid 1px orange;
+                    color: orange;
+                    border-radius: 24px;
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    width: 60%;
+                    justify-self: end;
+                   }
+                  p {
+                    margin-left: 20px;
+                    color: white;
+                    font-size: 20px;
+                   }
+               }
+       
+                   #textfooter { 
+                       font-size: 30px;
+                       color: white;
+                       /*centrado el texto  en sentido vertical*/
+                       justify-self: center;
+                   span {
+                       color: #DF991B;
+                        }
+                      }
+           }
+   }
+
+
+
+                /*******MEDIA QURIES*******/
+               /*Media quries SEGUNDA PARTE*/
+      @media (max-width: 800px){
+    
+          .seccion {
+                    grid-template-columns: 1fr;
+
+                     .contenido {
+                           display: none;
+                           }
+
+                .galeria {
+                   .primera {
+                           display: none;
+                          }
+                   .segunda {
+                          grid-column: span 10;
+                           }
+                   .tercera {
+                          grid-column: span 2;
+                           }
+                   .textos {
+                         display: none;
+                           }
+                       } 
+                   }
+      }
+
+               /***********TERCERA PARTE***************/
+               
+
+              
+
+
+
+           /***********CUARTA PARTE************/
+
+   @media (max-width: 1000px){
+   footer {
+           .gris {
+                display: none;
+                }                            
+                                      
+           .negra{ 
+
+            .enlac {
+                     grid-template-columns: repeat(2, 1fr);
+                   .medio {
+                       margin-top: 15px;
+                       justify-self: baseline;   /*cambiar el tipo de letra, color...*/
+                       font-size: 18px;
+                       font-weight: lighter;
+                       color: #aaa;
+                       display: block;
+                       }
+                   .primer {
+                       grid-column: span 2;
+                      }
+                   .ultim {
+                       text-align: left;
+                       justify-self: baseline;
+                       grid-column: span 2;
+                       margin-top: 35px;
+                       }
+                  }
+                    .copy{
+                        display: none;
+                        }
+     
+              }
+        }
+  }
+
+ 
